@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ask Us Anything</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background"></div>
+    <main class="page">
+      <section class="intro">
+        <div class="badge">Premium Support</div>
+        <h1>We're Here to Answer Your Questions</h1>
+        <p>
+          Share your question with us and our team will get back to you as soon as
+          possible. Provide your Gmail address so we can reach out with the
+          answers you need.
+        </p>
+      </section>
+      <section class="card">
+        <form id="question-form" novalidate>
+          <h2>Send Us Your Question</h2>
+          <div class="form-group">
+            <label for="full-name">Full Name</label>
+            <input
+              type="text"
+              id="full-name"
+              name="fullName"
+              placeholder="Your full name"
+              autocomplete="name"
+              required
+            />
+            <p class="hint">Please enter your complete name.</p>
+          </div>
+          <div class="form-group">
+            <label for="gmail">Gmail Address</label>
+            <input
+              type="email"
+              id="gmail"
+              name="gmail"
+              placeholder="yourname@gmail.com"
+              autocomplete="email"
+              required
+            />
+            <p class="hint">We currently accept Gmail addresses only.</p>
+          </div>
+          <div class="form-group">
+            <label for="question">Your Question</label>
+            <textarea
+              id="question"
+              name="question"
+              rows="5"
+              placeholder="How can we help you?"
+              required
+            ></textarea>
+          </div>
+          <div class="actions">
+            <button type="submit" class="primary">Submit Question</button>
+            <p id="status" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
